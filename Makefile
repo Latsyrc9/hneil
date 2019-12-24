@@ -5,4 +5,4 @@ qa:
 	docker-compose -f docker-compose-qa.yml up --build
 
 prod:
-	docker-compose -f docker-compose-prod.yml up --build
+	docker-compose -f docker-compose.yml up --build

@@ -2,14 +2,14 @@ version: '3.7'
 
 services:
 
-  local:
-    container_name: app-local
+  hneil-prod:
+    container_name: app
     build:
       context: ./app
-      dockerfile: Dockerfile.local
+      dockerfile: Dockerfile
     ports:
-      - '8080:3000'
+      - '8080:8080'
     volumes:
       - /app/node_modules
     environment:
-      - NODE_ENV=development
+      - NODE_ENV=production
