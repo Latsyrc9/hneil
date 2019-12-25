@@ -5,12 +5,12 @@ services:
   app:
     container_name: hneil-app
     build:
-      context: ./app
+      context: app
       dockerfile: Dockerfile.local
     ports:
       - '8080:3000'
     volumes:
-      - .:/src
-      - /node_modules
+      - ./app:/app:rw,cached
+      - /app/node_modules
     environment:
       - NODE_ENV=development
