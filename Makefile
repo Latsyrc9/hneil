@@ -1,8 +1,11 @@
 local:
-	docker-compose -f docker-compose-local.yml up --build
+	docker-compose --file=docker-compose-local.yml up
+
+build:
+	docker-compose --file=docker-compose-local.yml build
 
 # qa:
-# 	docker-compose -f docker-compose-qa.yml up --build
+# 	docker-compose --file=docker-compose-qa.yml up --build
 
 prod:
-	docker-compose -f docker-compose.yml up --build
+	docker-compose --file=docker-compose.yml up --build
