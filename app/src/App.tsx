@@ -3,11 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 
 import Home from './view/Home'
 
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faGithubAlt, faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
-import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import Portfolio from './view/Portfolio';
-library.add(faAngleRight, faGithubAlt, faLinkedin, faGithubSquare);
 
 
 const App = () => {
